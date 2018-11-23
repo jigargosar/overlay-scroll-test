@@ -1,9 +1,8 @@
-.App-root {
+.App-content-wrapper {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
 }
-
 .App-content {
   min-width: 4000px;
   min-height: 4000px;
