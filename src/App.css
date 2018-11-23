@@ -1,4 +1,21 @@
-.App {
+.App-root {
+}
+
+.App-content {
   width: 4000px;
   height: 4000px;
+}
+
+.App-modal {
+  display: none;
+}
+
+.App-modal-open {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
