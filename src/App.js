@@ -9,11 +9,8 @@ class App extends Component {
   render() {
     const open = this.state.open
     return (
-      <div>
-        <div
-          className="App-content-wrapper"
-          onClick={() => this.setState({ open: true })}
-        >
+      <div className="App-content-wrapper">
+        <div onClick={() => this.setState({ open: true })}>
           <div className="App-content">{dummyContent}</div>
         </div>
         <div
