@@ -2,19 +2,46 @@ html,
 body {
   height: 100%;
 }
+
 #root {
   height: 100%;
 }
 
 .Modal {
-  display: none;
+  /*display: none;*/
+  display: flex;
+  position: fixed;
+  /*top: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+}
+
+.Modal-scroller {
+  background-color: black;
+  color: white;
+
+  width: 50vw;
+  height: 50vh;
+  overflow: scroll;
+}
+.Modal-content {
+  min-width: 300px;
 }
 
 .App {
   height: 100%;
-  min-width: 1000px;
   font-size: 2rem;
   line-height: 2;
   overflow: auto;
   background-color: lightskyblue;
+}
+
+.App-content {
+  min-width: 1000px;
 }

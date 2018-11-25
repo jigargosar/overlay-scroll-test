@@ -12,11 +12,15 @@ class App extends Component {
     return (
       <>
         <div className="Modal" onClick={closeModal}>
-          <div className="">{dummyContent}</div>
+          <div className="Modal-scroller">
+            <div className="Modal-content">{dummyContent}</div>
+          </div>
         </div>
 
-        <div className={'App'} onClick={openModal}>
-          {dummyContent}
+        <div className={'App'}>
+          <div className={'App-content'} onClick={openModal}>
+            {dummyContent}
+          </div>
         </div>
       </>
     )
