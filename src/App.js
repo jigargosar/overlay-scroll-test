@@ -1,27 +1,24 @@
 import React, { Component } from 'react'
 import './App.css'
 import { dummyContent } from './dummy-content'
-import cn from 'classname'
 
 class App extends Component {
   state = { open: false }
 
   render() {
     const open = this.state.open
+    const openModal = () => this.setState({ open: true })
+    const closeModal = () => this.setState({ open: false })
     return (
-      <div className="App-content-wrapper">
-        <div onClick={() => this.setState({ open: true })}>
-          <div className="App-content">{dummyContent}</div>
+      <>
+        <div className="Modal" onClick={closeModal}>
+          <div className="">{dummyContent}</div>
         </div>
-        <div
-          className={cn('App-modal', {
-            'App-modal-open': open,
-          })}
-          onClick={() => this.setState({ open: false })}
-        >
-          <div className="Modal-content">{dummyContent}</div>
+
+        <div className={'App'} onClick={openModal}>
+          {dummyContent}
         </div>
-      </div>
+      </>
     )
   }
 }

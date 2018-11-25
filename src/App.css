@@ -1,35 +1,20 @@
-.App-content-wrapper {
-  width: 100vw;
-  height: 100vh;
-  overflow: scroll;
+html,
+body {
+  height: 100%;
 }
-.App-content {
-  min-width: 4000px;
-  min-height: 4000px;
-  background-color: #1f7d0f;
-  font-size: 5rem;
+#root {
+  height: 100%;
 }
 
-.App-modal {
+.Modal {
   display: none;
+}
+
+.App {
+  height: 100%;
+  min-width: 1000px;
   font-size: 2rem;
-}
-
-.App-modal-open {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Modal-content {
-  width: 80vw;
-  height: 80vh;
-  background-color: #fff;
-  overflow: scroll;
+  line-height: 2;
+  overflow: auto;
+  background-color: lightskyblue;
 }
