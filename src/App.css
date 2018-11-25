@@ -43,6 +43,10 @@ body {
   background-color: lightskyblue;
 }
 
+.App-column {
+  flex: 1 1 auto;
+}
+
 .App-content {
   padding: 3rem;
 }
