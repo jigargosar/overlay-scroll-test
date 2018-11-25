@@ -34,13 +34,15 @@ body {
 }
 
 .App {
+  display: flex;
+
   height: 100%;
-  font-size: 2rem;
-  line-height: 2;
+  /*font-size: 0.5rem;*/
+  /*line-height: 2;*/
   overflow: auto;
   background-color: lightskyblue;
 }
 
 .App-content {
-  min-width: 1000px;
+  padding: 3rem;
 }

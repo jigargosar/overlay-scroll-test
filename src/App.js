@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import './App.css'
 import { dummyContent } from './dummy-content'
+import * as R from 'ramda'
+
+const dummyContentSmall = R.take(100)(dummyContent)
 
 class App extends Component {
   state = { open: false }
@@ -17,7 +20,13 @@ class App extends Component {
 
         <div className={'App'}>
           <div className={'App-content'} onClick={openModal}>
-            {dummyContent}
+            {dummyContentSmall}
+          </div>
+          <div className={'App-content'} onClick={openModal}>
+            {dummyContentSmall}
+          </div>
+          <div className={'App-content'} onClick={openModal}>
+            {dummyContentSmall}
           </div>
         </div>
       </>
