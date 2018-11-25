@@ -19,7 +19,7 @@ class App extends Component {
         </div>
 
         <div className={'App'}>
-          <div className="App-column">
+          <div className="App-section">
             <div className={'App-content'} onClick={openModal}>
               {dummyContentSmall}
             </div>
@@ -30,7 +30,7 @@ class App extends Component {
               {dummyContentSmall}
             </div>
           </div>
-          <div className="App-column">
+          <div className="App-section">
             <div className={'App-content'} onClick={openModal}>
               {dummyContentSmall}
             </div>
