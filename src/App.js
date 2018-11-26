@@ -21,35 +21,7 @@ class App extends Component {
         <div className={'App'}>
           <div className="App-section">
             <div className={'App-content'} onClick={openModal}>
-              {dummyContentSmall}
-            </div>
-            <div className={'App-content'} onClick={openModal}>
-              {dummyContentSmall}
-            </div>
-            <div className={'App-content'} onClick={openModal}>
-              {dummyContentSmall}
-            </div>
-          </div>
-          <div className="App-section">
-            <div className={'App-content'} onClick={openModal}>
-              {dummyContentSmall}
-            </div>
-            <div className={'App-content'} onClick={openModal}>
-              {dummyContentSmall}
-            </div>
-            <div className={'App-content'} onClick={openModal}>
-              {dummyContentSmall}
-            </div>
-          </div>
-          <div className="App-section">
-            <div className={'App-content'} onClick={openModal}>
-              {dummyContentSmall}
-            </div>
-            <div className={'App-content'} onClick={openModal}>
-              {dummyContentSmall}
-            </div>
-            <div className={'App-content'} onClick={openModal}>
-              {dummyContentSmall}
+              {dummyContent}
             </div>
           </div>
         </div>
