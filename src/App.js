@@ -24,10 +24,6 @@ class App extends Component {
     const closeModal = () => this.setState({ open: false })
     return (
       <>
-        <div className={`Modal ${open ? '' : 'hidden'}`} onClick={closeModal}>
-          <div className="Modal-content">{dummyContent}</div>
-        </div>
-
         <div id="App" className={'App'}>
           <div
             id="zoom-container"
@@ -36,6 +32,10 @@ class App extends Component {
           >
             {dummyContent}
           </div>
+        </div>
+
+        <div className={`Modal ${open ? '' : 'hidden'}`} onClick={closeModal}>
+          <div className="Modal-content">{dummyContent}</div>
         </div>
       </>
     )
