@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
 import { dummyContent } from './dummy-content'
-import * as R from 'ramda'
-
-const dummyContentSmall = R.take(100)(dummyContent)
 
 class App extends Component {
   state = { open: false }
