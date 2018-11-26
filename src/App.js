@@ -16,10 +16,8 @@ class App extends Component {
         </div>
 
         <div className={'App'}>
-          <div className="App-section">
-            <div className={'App-content'} onClick={openModal}>
-              {dummyContent}
-            </div>
+          <div className={'App-content'} onClick={openModal}>
+            {dummyContent}
           </div>
         </div>
       </>
