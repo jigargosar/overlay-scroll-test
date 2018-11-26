@@ -1,9 +1,21 @@
 import React, { Component } from 'react'
 import './App.css'
 import { dummyContent } from './dummy-content'
+import Hammer from 'hammerjs'
 
 class App extends Component {
   state = { open: false }
+  zoomHam = null
+  componentDidMount() {
+    // const zoomEl = document.getElementById("zoom-container")
+    const zoomEl = document.body
+    // const zoomEl = document.getElementById('App')
+    this.zoomHam = new Hammer(zoomEl, {})
+    this.zoomHam.get('pinch').set({ enable: true })
+    this.zoomHam.on('pinch', ev => {
+      console.log(`ev.scale`, ev.scale)
+    })
+  }
 
   render() {
     const open = this.state.open
@@ -15,8 +27,12 @@ class App extends Component {
           <div className="Modal-content">{dummyContent}</div>
         </div>
 
-        <div className={'App'}>
-          <div className={'App-content'} onClick={openModal}>
+        <div id="App" className={'App'}>
+          <div
+            id="zoom-container"
+            className={'App-content'}
+            onClick={openModal}
+          >
             {dummyContent}
           </div>
         </div>
