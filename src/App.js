@@ -7,12 +7,13 @@ class App extends Component {
   state = { open: false }
   zoomHam = null
   componentDidMount() {
-    // const zoomEl = document.getElementById("zoom-container")
-    const zoomEl = document.body
+    const zoomEl = document.getElementById('zoom-container')
     // const zoomEl = document.getElementById('App')
-    this.zoomHam = new Hammer(zoomEl, {})
+    this.zoomHam = new Hammer(document.body, {})
     this.zoomHam.get('pinch').set({ enable: true })
     this.zoomHam.on('pinch', ev => {
+      zoomEl.style.transform = `scale(${ev.scale})`
+      zoomEl.style['transform-origin'] = `0 0`
       console.log(`ev.scale`, ev.scale)
     })
   }
